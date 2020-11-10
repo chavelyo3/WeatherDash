@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+   
+
+
+</head>
+<body>
+    <header>
+        <div class="container-fluid ">
+            <h1>Weather Dashboard</h1>
+        </div>
+        
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-3 one">
+                    <h4>Search Your City:</h4>
+                    <div class="input-group input-group-sm mb-3">
+                        <input id="input" type="text" class="form-control inputOne" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                        <span> <button id="button">Search<i class="fas fa-searchbtn"></i></button></span>
+                    </div>
+                    <div  class="container card">
+                        
+                        <ul id="city-list"class="list-group">
+                          
+                        </ul>
+                        <button id= "clearbtn" type="button" class="btn">Clear</button>
+                      </div>
+                </div>  
+                <div class="col-9">
+                    <div class="card w-75">
+                        <div id="cityView" class="card-body">
+                            <div id="view-title" class="title"></div>
+                        
+                        </div>
+                        
+                    </div>
+                    <!--5 day forcast-->
+
+                    <div id="five-title" class="container titleFive"></div>
+                    <div id="dayFive" class="row">
+                        
+                    </div>
+                </div>
+            </div>    
+        </div>        
+    </main>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

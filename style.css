@@ -1,0 +1,33 @@
+body{
+    background-color: lightgrey;
+}
+header{
+    padding: 1%;
+    margin-bottom: 1%;
+    background-color: plum;
+    color:white;
+    text-align: center;
+}
+
+.one{
+    padding-top: 1rem;
+    background-color: beige;
+}
+.li{
+    text-align: center;
+    font-size: 15px;
+    list-style: none;
+    border: solid 1px #cad3c855;
+    padding: 1px;
+}
+
+#five-day{
+        margin-left:4px ;
+        
+      
+}
+
+button {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    
+}

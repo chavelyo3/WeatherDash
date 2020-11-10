@@ -9,12 +9,12 @@ this week we created a weather dashboard to include:
 </ul>
 <br>using javascript, ajax, html, and css. 
 <br>
-https://chavelyo3.github.io/SchedulingApp/
+https://chavelyo3.github.io/WeatherDash/
 <br>
 image here
 <br>
 <h1>How to use: </h1><br>
-In the search bar you would enter which the city you'd lik to view. 
+In the search bar you would enter which the city you'd like to view. 
 
 <br>
 <h1>Credits:</h1> <br>

@@ -3,9 +3,10 @@ this week we created a weather dashboard to include:
 <ul>
 <li>Current weather</li>
 <li>Next 5 days</li>
-<li>humidity</li>
+<li>Temperature</li>
+<li>Humidity</li>
 <li>Uv index</li>
-<li>wind speed</li>
+<li>Wind speed</li>
 </ul>
 <br>using javascript, ajax, html, and css. 
 <br>
@@ -18,4 +19,4 @@ In the search bar you would enter which the city you'd like to view.
 
 <br>
 <h1>Credits:</h1> <br>
-U of M coder and tutor!
+U of M bootcamp and tutor!

@@ -7,6 +7,7 @@ this week we created a weather dashboard to include:
 <li>Uv index</li>
 <li>wind speed</li>
 </ul>
+<br>using javascript, ajax, html, and css. 
 <br>
 https://chavelyo3.github.io/SchedulingApp/
 <br>

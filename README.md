@@ -1,1 +1,20 @@
-# WeatherDash
+<h1>Task:</h1><br>
+this week we created a weather dashboard to include: 
+<ul>
+<li>Current weather</li>
+<li>Next 5 days</li>
+<li>humidity</li>
+<li>Uv index</li>
+<li>wind speed</li>
+</ul>
+<br>
+https://chavelyo3.github.io/SchedulingApp/
+<br>
+image here
+<br>
+<h1>How to use: </h1><br>
+In the search bar you would enter which the city you'd lik to view. 
+
+<br>
+<h1>Credits:</h1> <br>
+U of M coder and tutor!

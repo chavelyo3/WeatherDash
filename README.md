@@ -15,7 +15,7 @@ https://chavelyo3.github.io/WeatherDash/
 image here
 <br>
 <h1>How to use: </h1><br>
-In the search bar you would enter which the city you'd like to view. 
+In the search bar you would enter the city you'd like to view. 
 
 <br>
 <h1>Credits:</h1> <br>

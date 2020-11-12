@@ -1,46 +1,73 @@
-body{
-    background-color: lightgrey;
-}
-header{
-    padding: 1%;
-    margin-bottom: 1%;
-    background-color: black;
-    color:white;
-    text-align: center;
+body {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #F2D8C2;
+  background-position: fixed;
 }
 
-.one{
-    padding-top: 1rem;
-    background-color: beige;
-}
-.li{
-    text-align: center;
-    font-size: 15px;
-    list-style: none;
-    border: solid 1px #cad3c855;
-    padding: 1px;
+.container-fluid {
+  padding: 1%;
+  margin-bottom: 1%;
+  text-align: center;
+  
+ 
 }
 
-#five-day{
-        margin-left:4px ;
-        
-      
+.container{
+  background-color: white;
+  text-align: center;
+  
+ 
+}
+
+.one {
+  padding-top: 10%;
+  background-color: #FFA500;
+  width: 20px;
+  height: 50%;
+  }
+
+#dayFive{
+  margin-top: 1rem;
+}
+.li {
+  text-align: center;
+  font-size: 15px;
+  list-style: none;
+  border: solid 1px #cad3c855;
+  padding: 1px;
+}
+
+li:hover{
+  background: #FfA500;
+}
+
+#five-day {
+  margin-left: 4px;
 }
 
 button {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
 }
 
-.green{
-    background-color: green;
+.green {
+  background-color: green;
 }
-.yellow{
-    background-color: yellow;
+.yellow {
+  background-color: yellow;
 }
-.orange{
-    background-color: orange;
+.orange {
+  background-color: orange;
 }
-.red{
-    background-color: red;
+.red {
+  background-color: red;
+}
+
+body::-webkit-scrollbar {
+  width: 10px; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: white; /* color of the tracking area */
 }

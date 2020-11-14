@@ -175,8 +175,6 @@ $(document).ready(function () {
 
 
 
-  // Style the 5 day forecast using both the data given to us from the API call and bootstrap maybe or just
-  //local CSS works too. All within that for loop!
 
   // Style the list of previous city buttons for underneath the search bar using the localStorage get Item
   // to get the array of previous stuff. All in the render function

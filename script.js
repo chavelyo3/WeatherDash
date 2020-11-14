@@ -43,12 +43,12 @@ $(document).ready(function () {
   
         temp = Math.floor(temp);
   
-        let tempOne = $("<p>").text("Temperature: " + temp + " °F");
+        let tempOne = $("<p>").text("Temperature: " + temp + "°F");
         $("#cityView").append(tempOne);
   
         let humid = response.main.humidity;
   
-        let tempTwo = $("<p>").text("Humidity: " + humid + " %");
+        let tempTwo = $("<p>").text("Humidity: " + humid + "%");
         $("#cityView").append(tempTwo);
   
         let windSpeed = response.wind.speed;
@@ -124,10 +124,10 @@ $(document).ready(function () {
             
           let icon = $("<img>").attr("src", "https://openweathermap.org/img/wn/" + weatherResponse.list[j].weather[0].icon + ".png");
             
-          let temp = weatherResponse.list[j].main.temp;
-          let fiveTwo = $("<p class ='card-text'>").text("Temperature: " + temp);
+          let temp = parseInt((weatherResponse.list[j].main.temp-273.15)*1.85 + 32);
+          let fiveTwo = $("<p class ='card-text'>").text("Temperature: " + temp + "°F");
           let humid = weatherResponse.list[j].main.humidity;
-          let fiveThree = $("<p class='card-text'>").text("Humidity: " + humid);
+          let fiveThree = $("<p class='card-text'>").text("Humidity: " + humid + "%");
           let fiveDiv = $("<div class=' card-body five'>");
 
       

@@ -33,16 +33,6 @@ div.container.card {
   text-align: center;
   
 }
-
-#five-title {
-  text-align: center;
-}
-
-
-#five-title {
-  margin-left: 4px;
-}
-
 div.card-body.five {
   width: 8.5rem;
   border-radius: 10px;
@@ -51,6 +41,7 @@ div.card-body.five {
   margin-left: 6px;
   background-color: #f2d8c2;
 }
+
 
 button {
   font-family: "Open Sans", sans-serif;

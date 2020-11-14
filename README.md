@@ -12,7 +12,7 @@ this week we created a weather dashboard to include:
 <br>
 https://chavelyo3.github.io/WeatherDash/
 <br>
-image here
+[ screenshot of result will go here]
 <br>
 <h1>How to use: </h1><br>
 In the search bar you would enter the city you'd like to view. 

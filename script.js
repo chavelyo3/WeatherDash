@@ -119,7 +119,7 @@ $(document).ready(function () {
 
 
           let fiveone = $("<h5 class='card-title'>").text(
-            month + "/" + day + "/" + year ); 
+            month + "•" + day + "•" + year ); 
 
             
           let icon = $("<img>").attr("src", "https://openweathermap.org/img/wn/" + weatherResponse.list[j].weather[0].icon + ".png");

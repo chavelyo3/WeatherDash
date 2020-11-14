@@ -43,7 +43,7 @@ $(document).ready(function () {
   
         temp = Math.floor(temp);
   
-        let tempOne = $("<p>").text("Temprature: " + temp + " °F");
+        let tempOne = $("<p>").text("Temperature: " + temp + " °F");
         $("#cityView").append(tempOne);
   
         let humid = response.main.humidity;
@@ -98,18 +98,47 @@ $(document).ready(function () {
         url: weatherURL,
         method: "GET",
       }).then(function (weatherResponse) {
-        $("#five-title").empty();
-        $("#dayFive").empty();
+        $("#5title").empty();
+        $("#day-five").empty();
         console.log(weatherResponse);
-        console.log(queryURL);
+        console.log(weatherURL);
+        $("#day-five").empty();
+          $("#five-title").empty();
 
-      let dayCinco = $("<h3>").text("Forecast For The Next 5 Days:");
-      $("#five-title").append(dayCinco);
+      let dayCinco = $("<h3>").text("Next 5 Days:");
+      $("#5title").append(dayCinco);
+       for (let j = 0 ; j< weatherResponse.list.length; j+=8){
+          var newP = $("<div class='card-deck'>");
+          $("#day-five").append(newP);
 
-        let imgIcon = "http://openweathermap.org/img/wn/"
-        for (j = 0 ; j< weatherResponse.list.length; j+=8){
-          var newP = $("<p>").text(weatherResponse.list[j].dt_txt)
-          $("#dayFive").append(newP)
+    
+          
+          let month = weatherResponse.list[j].dt_txt.split("-")[1];
+          let day = weatherResponse.list[j].dt_txt.split("-")[2].split(" ")[0];
+          let year = weatherResponse.list[j].dt_txt.split("-")[0];
+
+
+          let fiveone = $("<h5 class='card-title'>").text(
+            month + "/" + day + "/" + year ); 
+
+            
+          let icon = $("<img>").attr("src", "https://openweathermap.org/img/wn/" + weatherResponse.list[j].weather[0].icon + ".png");
+            
+          let temp = weatherResponse.list[j].main.temp;
+          let fiveTwo = $("<p class ='card-text'>").text("Temperature: " + temp);
+          let humid = weatherResponse.list[j].main.humidity;
+          let fiveThree = $("<p class='card-text'>").text("Humidity: " + humid);
+          let fiveDiv = $("<div class=' card-body five'>");
+
+      
+          fiveDiv.append(fiveone);
+          fiveDiv.append(icon);
+          fiveDiv.append(fiveTwo);
+          fiveDiv.append(fiveThree);
+          newP.append(fiveDiv)
+         
+        
+          
         }  
         
       // image link http://openweathermap.org/img/wn/ 
@@ -142,4 +171,16 @@ $(document).ready(function () {
   //get stored cities and create list (li)
 
     })
- 
+  //render 
+
+
+
+  // Style the 5 day forecast using both the data given to us from the API call and bootstrap maybe or just
+  //local CSS works too. All within that for loop!
+
+  // Style the list of previous city buttons for underneath the search bar using the localStorage get Item
+  // to get the array of previous stuff. All in the render function
+
+  // Solve duplicate button issue?
+
+  // Solve if I click the rendered button to make a search for that button.

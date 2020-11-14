@@ -1,77 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Dashboard</title>
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
 
     <!--Google font-->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-        </style>
-   
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+    </style>
 
-
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <div class="container-fluid ">
-         
-            <img src="../WeatherDash/assets/banner.png" widthe =200 height =100 alt ="weather dashboard banner">
-        </div>
-        
+      <div class="container-fluid">
+        <img
+          src="../WeatherDash/assets/banner.png"
+          widthe="200"
+          height="100"
+          alt="weather dashboard banner"
+        />
+      </div>
     </header>
     <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-3 one">
-                    <h4>Search by city:</h4>
-                    <div class="input-group input-group-sm mb-3">
-                        <input id="input" type="text" class="form-control inputOne" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="enter city here">
-                        <span> <button id="button">Search<i class="fas fa-searchbtn"></i></button></span>
-                        <button id= "clearBtn" type="button" class="btn btn-outline">Clear</button>
-       
-                    </div>
-                    <div  class="container card">
-                        
-                        <ul id="city-list"class="list-group">
-                          
-                        </ul>
-                        </div>
-                </div>  
-                <div class="col-9">
-                    <div class="card w-75">
-                        <div id="cityView" class="card-body">
-                            <div id="view-title" class="title"></div>
-                        
-                        </div>
-                        
-                    </div>
-                    <!--5 day forcast-->
+      <div class="container">
+        <div class="row">
+          <div class="col-3 one">
+            <h4>Search by city:</h4>
+            <div class="input-group input-group-sm mb-3">
+              <input
+                id="input"
+                type="text"
+                class="form-control inputOne"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-lg"
+                placeholder="enter city or zip code here"
+              />
+              <span>
+                <button id="button">
+                  Search<i class="fas fa-searchbtn"></i></button
+              ></span>
+              <button id="clearBtn" type="button" class="btn btn-outline">
+                Clear
+              </button>
+            </div>
+            <div class="container card">
+              <ul id="city-list" class="list-group"></ul>
+            </div>
+          </div>
+          <div class="col-9">
+            <div class="card w-75">
+              <div id="cityView" class="card-body">
+                <div id="view-title" class="title"></div>
+              </div>
+            </div>
+            <!--5 day forcast-->
 
-                    <div id="Fivetitle" class="container title5"></div>
-                    <div id="day-five" class="row">
-                    </div>
-
-                        </div>
-                        
-                        
-                    </div>
-          </div>   
-         
+            <div id="Fivetitle" class="container title5"></div>
+            <div id="day-five" class="row"></div>
+          </div>
+        </div>
+      </div>
     </main>
 
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

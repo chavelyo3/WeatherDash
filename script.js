@@ -109,12 +109,12 @@ $(document).ready(function () {
       url: weatherURL,
       method: "GET",
     }).then(function (weatherResponse) {
-      console.log(weatherResponse);
-      console.log(weatherURL);
       $("#day-five").empty();
       $("#Fivetitle").empty();
 
-
+      console.log(weatherResponse);
+      console.log(weatherURL);
+      
       let dayCinco = $("<h3>").text("Next 5 Days:");
       $("#Fivetitle").append(dayCinco);
       for (let j = 0; j < weatherResponse.list.length; j += 8) {
@@ -140,11 +140,11 @@ $(document).ready(function () {
           (weatherResponse.list[j].main.temp - 273.15) * 1.85 + 32
         );
         let fiveTwo = $("<div class ='card-text'>").text(
-          "Temperature: " + temp + "°F"
+          "Temperature " + temp + "°F"
         );
         let humid = weatherResponse.list[j].main.humidity;
         let fiveThree = $("<div class='card-text'>").text(
-          "Humidity: " + humid + "%"
+          "Humidity " + humid + "%"
         );
         let fiveDiv = $("<div class=' card-body five'>");
 

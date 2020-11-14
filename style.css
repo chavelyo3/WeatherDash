@@ -31,7 +31,6 @@ div.container.card {
 #day-five {
   margin-top: 1rem;
   text-align: center;
-  
 }
 div.card-body.five {
   width: 8.5rem;
@@ -41,7 +40,6 @@ div.card-body.five {
   margin-left: 6px;
   background-color: #f2d8c2;
 }
-
 
 button {
   font-family: "Open Sans", sans-serif;
@@ -66,4 +64,3 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-track {
   background: white; /* color of the tracking area */
 }
-

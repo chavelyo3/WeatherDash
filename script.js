@@ -196,7 +196,7 @@ $(document).ready(function () {
       $("#city-list").prepend(li);
       
     }
-$("#city-list").on("click", function(){
+$("#city-list").on("click", "li", function(){
   previousCities($(this).text());
  
   

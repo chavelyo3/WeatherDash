@@ -4,7 +4,7 @@ $(document).ready(function () {
   if (JSON.parse(localStorage.getItem("previousCities"))) {
     var list = JSON.parse(localStorage.getItem("previousCities"));
   } else {
-    var list = [];
+    var list = [i];
   }
   let searchBtn = $("#button");
   let hour = moment().hours();
@@ -163,6 +163,7 @@ $(document).ready(function () {
   //start button
 
   searchBtn.on("click", currentWeather);
+  
 
   function renderList() {}
   renderList();
@@ -174,7 +175,35 @@ $(document).ready(function () {
     list = [];
     localStorage.setItem("previousCities", JSON.stringify(list));
     renderList();
+    
   });
+
+  function renderList(){
+    $("#city-list").empty();
+    if (localStorage.getItem("previousCities") !== null){
+      list = JSON.parse(localStorage.getItem("previousCities"));
+
+     
+    }
+
+    for(let i =0; i < list.length; i++){
+      let o = list[i]
+
+      let li = $('<li>').text(o);
+      li.addClass("container oli");
+      li.attr("data-one", o);
+      li.attr("id", "oli");
+      $("#city-list").prepend(li);
+      
+    }
+$("#city-list").on("click", function(){
+  previousCities($(this).text());
+ 
+  
+})
+  
+    
+  }
 
   // storing cities
   //get stored cities and create list (li)
@@ -185,5 +214,7 @@ $(document).ready(function () {
 // to get the array of previous stuff. All in the render function
 
 // Solve duplicate button issue?
+
+
 
 // Solve if I click the rendered button to make a search for that button.

@@ -205,16 +205,5 @@ $("#city-list").on("click", "li", function(){
     
   }
 
-  // storing cities
-  //get stored cities and create list (li)
+ 
 });
-//render
-
-// Style the list of previous city buttons for underneath the search bar using the localStorage get Item
-// to get the array of previous stuff. All in the render function
-
-// Solve duplicate button issue?
-
-
-
-// Solve if I click the rendered button to make a search for that button.
